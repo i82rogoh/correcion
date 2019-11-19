@@ -12,7 +12,7 @@ int main(){
 	m.cargaTratamientos();
 	//Dividir los switch en paciente, citas, tratamientos e historial. Formato para fecha.
 	string respuesta;
-	cout << "\nOpciones a elegir: \n\n" << "1. Añadir Paciente " << "2. Mostrar Pacientes " << "3. modificar Paciente " <<" 4. Buscar un paciente por nombre y apellidos"<< " 5. Escribir en el historial " << "6. Ver Historial" << " 7. Añadir Cita " << "8.Ver Citas de un Paciente " << "9.Ver citas del dia " << "10.Modificar Citas" << " 11. Eliminar Citas" << "12. Añadir Tratamiento " << "13. Ver Tratamientos de un paciente " << "14. Eliminar un tratamiento\n";
+	cout << "\nOpciones a elegir: \n\n" << "1. Añadir Paciente \n" << "2. Mostrar Pacientes \n" << "3. modificar Paciente \n" <<" 4. Buscar un paciente por nombre y apellidos\n"<< " 5. Escribir en el historial \n" << "6. Ver Historial\n" << " 7. Añadir Cita \n" << "8.Ver Citas de un Paciente\n " << "9.Ver citas del dia \n" << "10.Modificar Citas\n" << " 11. Eliminar Citas\n" << "12. Añadir Tratamiento\n " << "13. Ver Tratamientos de un paciente\n " << "14. Eliminar un tratamiento\n";
 
 	cin >> opcion;
 
