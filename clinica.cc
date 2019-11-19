@@ -38,7 +38,7 @@ void Clinica::addPaciente(){
     getline(cin,apellidos);
     p.setApellidos(apellidos);
     cout <<"Introduce la fecha de nacimiento del nuevo Paciente (dd/mm/yyyy): ";
-    cin >> fechanacimiento;
+    getline(cin,fechanacimiento);
     while (comprobacion){
         if(comprobarFecha(fechanacimiento)){
             p.setFechanacimiento(fechanacimiento);
