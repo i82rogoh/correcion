@@ -321,8 +321,8 @@ void Clinica::modificarPaciente(){
 
     Paciente* J = &getPaciente();
     
-    cout << "Que quieres modificar: 1. Dni, 2. Nombre, 3. Apellidos, 4. Fecha de nacimiento, 5. Numero de Telefono, 6. Tipo de Paciente, 7. Direccion, 8. Direccion Postal";
-
+    cout << "Que quieres modificar: 1. Dni\n2. Nombre\n3. Apellidos\n4. Fecha de nacimiento\n5. Numero de Telefono\n6. Tipo de Paciente\n7. Direccion\n8. Direccion Postal";
+	
     cin >> opcion;
 
     switch(opcion){
@@ -490,7 +490,7 @@ void Clinica::addCita(){
     Citas c(*p);
     string fecha, motivo, hora;
 
-    cout << "Introduce la fecha de la cita: ";
+    cout << "Introduce la fecha de la cita (dd/mm/yyyy): ";
     cin >> fecha;
     while (comprobacion){
         if (comprobarFecha(fecha)){
@@ -503,7 +503,7 @@ void Clinica::addCita(){
         } 
     }
 
-    cout <<"Introduce la hora de la cita: ";
+    cout <<"Introduce la hora de la cita (hh:mm): ";
     cin >> hora;
     while (comprobacion2){
         if (comprobarHora(hora)){
@@ -644,7 +644,7 @@ void Clinica::modificarCitas(){
             {
                 case 1:{
                     bool comprobacion=true;
-                    cout << "Introduce la nueva fecha de la cita: ";
+                    cout << "Introduce la nueva fecha de la cita (dd/mm/yyyy): ";
                     cin >> fecha;
                     while (comprobacion){
                         if (comprobarFecha(fecha)){
@@ -661,7 +661,7 @@ void Clinica::modificarCitas(){
 
                 case 2:{
                     bool comprobacion2=true;
-                    cout << "Introduce la nueva hora de la cita: ";
+                    cout << "Introduce la nueva hora de la cita (hh:mm): ";
                     cin >> hora;
                     while (comprobacion2){
                         if (comprobarHora(hora)){
@@ -743,7 +743,7 @@ void Clinica::addTratamiento(){
     getline(cin,regularidad);
     t.setRegularidad(regularidad);
 
-    cout << "Introduce la fecha de inicio: ";
+    cout << "Introduce la fecha de inicio (dd/mm/yyyy): ";
     cin >> fechainicio;
     while (comprobacion){
         if (comprobarFecha(fechainicio)){
@@ -755,7 +755,7 @@ void Clinica::addTratamiento(){
             cin >> fechainicio;
         } 
     }
-    cout << "Introduce la fecha final: ";
+    cout << "Introduce la fecha final (dd/mm/yyyy): ";
     cin >> fechafin;
     while (comprobacion2){
         if (comprobarFecha(fechafin)){
